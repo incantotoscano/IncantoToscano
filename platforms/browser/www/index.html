@@ -39,22 +39,144 @@
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
     <link rel="stylesheet" type="text/css" href="css/index.css" />
-    <title>Hello World</title>
+    <title>Incanto Toscano</title>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+<link href="/netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+<link href="css/general.css" rel="stylesheet" media="screen">
+
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="js/shadowbox/shadowbox.css">
+
+<link href="js/royalslider/royalslider.css" rel="stylesheet">
+<link href="js/royalslider/rs-minimal-white.css" rel="stylesheet">
+<link href="js/royalslider/template.css" rel="stylesheet">
+
+<style>
+.royalSlider {
+	overflow: hidden;
+	display: none;
+}
+</style>
+
 </head>
 
 <body>
-    <div class="app">
-        <h1>PhoneGap</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
-        </div>
-    </div>
-    <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
-    <script type="text/javascript">
-        app.initialize();
-    </script>
+    <div class="container content-main bg-04">
+			
+
+			
+	<div class="dx">
+	
+		<div>
+			<div class="box-content mb20 bg-02">
+			
+			<div class="royalSlider rsMinW">
+				
+				        
+				<div class="rsContent" style="background:url(http://www.incantotoscano.com/img/Laura/1.jpg) #F5F5F5 no-repeat; background-size:cover;">
+				</div>        
+				<div class="rsContent" style="background:url(http://www.incantotoscano.com/img/Laura/2.jpg) #F5F5F5 no-repeat; background-size:cover;">
+				</div>        
+				<div class="rsContent" style="background:url(http://www.incantotoscano.com/img/Laura/3.jpg) #F5F5F5 no-repeat; background-size:cover;">
+				</div>        
+				<div class="rsContent" style="background:url(http://www.incantotoscano.com/img/Laura/4.jpg) #F5F5F5 no-repeat; background-size:cover;">
+				</div>        
+				<div class="rsContent" style="background:url(http://www.incantotoscano.com/img/Laura/5.jpg) #F5F5F5 no-repeat; background-size:cover;">
+				</div>        
+				<div class="rsContent" style="background:url(http://www.incantotoscano.com/img/Laura/6.jpg) #F5F5F5 no-repeat; background-size:cover;">
+				</div>        
+				<div class="rsContent" style="background:url(http://www.incantotoscano.com/img/Laura/7.jpg) #F5F5F5 no-repeat; background-size:cover;">
+				</div>        
+				
+				
+			</div>
+			
+		</div>
+		
+		<div class="bg-01 mb20">
+			<div class="pull-left" style="width:50%;">
+				<div class="p20">
+					<big>Nordic Walking Firenze</big>
+					<p><br>
+					<p>Laura tel 327-3693504
+					<br>Andrea tel 339-8767846
+					<br><br>laura.cialfi@nordicwalkingfirenze.it</p>
+					<p>www.nordicwalkingfirenze.it</p>
+				</div>
+			</div>
+			<div class="pull-right" style="width:50%;">
+				<div class="p20">
+					<br>
+					<p>Fare escursioni nei luoghi pi&ugrave; belli della Maramma splendida e incontaminata
+					<br>&egrave; il valore aggiunto che offriamo
+					<br>a chi si unisce a noi. </p>
+					<p>Il turismo sportivo &egrave; ormai un nuovo modo
+					<br>di viaggiare, attivo e piacevole
+					<br>se viene fatto insieme a GAE preparate
+					<br>e Istruttori Federali di Nordic Walking.</p>
+				</div>
+			</div>
+			<div class="p20">
+				<p><img src="http://www.incantotoscano.com/img/Laura/bottom.jpg"  alt="Laura Cialfi"/></p>
+			</div>
+		</div>
+
+</div>
+
+
+</div>
+
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-ui.js"></script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.menu .nav #sub-').addClass('in');
+	$('.menu .nav #sub- .li- a').addClass('active');
+});
+</script>
+
+<script src="js/royalslider/jquery.royalslider.min.js"></script>
+
+<script>
+$(function() {
+	
+	$(".royalSlider").royalSlider({
+		fadeinLoadedSlide: false,
+		addActiveClass: true,
+		keyboardNavEnabled: false,
+		imageScalePadding: 0,
+		slidesSpacing: 0,
+		loop: true,
+		arrowsNav: false,
+		arrowsNavAutoHide: false,
+		controlNavigation: 'none',
+		autoPlay: {
+			enabled: true,
+			pauseOnHover: false,
+			delay : 4000
+		}
+	});
+	
+	$('.royalSlider').show();
+	
+});
+</script>
+
+<script type="text/javascript" src="js/shadowbox/shadowbox.js"></script>
+<script type="text/javascript">
+Shadowbox.init();
+</script>
+
+<script type="text/javascript">
+    $(window).load(function(){
+        //$('#homemsg').modal('show');
+    });
+</script>
 </body>
 
 </html>
