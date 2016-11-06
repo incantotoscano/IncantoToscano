@@ -52,6 +52,40 @@
 <link href="js/royalslider/royalslider.css" rel="stylesheet">
 <link href="js/royalslider/rs-minimal-white.css" rel="stylesheet">
 <link href="js/royalslider/template.css" rel="stylesheet">
+<!--
+InAppBrowser
+-->
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8">
+
+    // Wait for Cordova to load
+    //
+    document.addEventListener("deviceready", onDeviceReady, false);
+
+    // Global InAppBrowser reference
+    var iabRef = null;
+
+    function iabLoadStart(event) {
+        alert(event.type + ' - ' + event.url);
+    }
+
+    function iabLoadStop(event) {
+        alert(event.type + ' - ' + event.url);
+    }
+
+    function iabClose(event) {
+         alert(event.type);
+         iabRef.removeEventListener('loadstart', iabLoadStart);
+         iabRef.removeEventListener('loadstop', iabLoadStop);
+         iabRef.removeEventListener('exit', iabClose);
+    }
+
+    </script>
+	
+	
+<!--
+InAppBrowser
+-->	
 
 <style>
 .royalSlider {
@@ -209,14 +243,16 @@
 			<div class="pull-right" style="width:50%;">
 				<div class="p20">
 					<big>Guide GAE</big>
-						<br><br><br>
-					<p>LAURA<br>tel. 327-3693504</p>
-					<p>laura.cialfi@nordicwalkingfirenze.it</p>
+						<br><br>
+					<p>LAURA<br>tel. 327-3693504<br>laura.cialfi@nordicwalkingfirenze.it</p>
 						<br>
-					<p>ANDREA<br>tel. 339-8767846</p>
-					<p>andream@tiscali.it</p>
+					<p>ANDREA<br>tel. 339-8767846<br>andream@tiscali.it</p>
+					<br>
+					<button type="button" onclick="window.open('http://www.incantotoscano.com/','_self','location=yes')">
+						Incanto Toscano - Web Site</button>
 				</div>
 			</div>
+			
 			<div class="p20">
 				<p>
 					<a href="http://www.incantotoscano.com/img/Laura/1.pdf">
